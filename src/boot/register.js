@@ -17,7 +17,7 @@ import {boot} from 'quasar/wrappers';
 import {datadogRum} from '@datadog/browser-rum';
 
 export default boot(({app}) => {
-    if (!process && !process.env.DATADOG_APPLICATION_ID) {
+    if (!process || !process.env.DATADOG_APPLICATION_ID) {
         console.warn('no config for @datadog/browser-rum found');
         return;
     }
