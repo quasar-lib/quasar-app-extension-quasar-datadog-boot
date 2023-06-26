@@ -29,6 +29,7 @@ export default boot(({app}) => {
         trackResources: true,
         trackLongTasks: true,
         trackUserInteractions: true,
+        allowedTracingUrls: process.env.DATADOG_ALLOWED_TRACING_URLS || undefined,
     }
     datadogRum.init(config);
     datadogRum.startSessionReplayRecording();
