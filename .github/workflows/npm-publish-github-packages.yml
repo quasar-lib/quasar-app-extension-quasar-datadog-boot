@@ -4,6 +4,12 @@
 name: Node.js Package
 
 on:
+  workflow_dispatch:
+    inputs:
+      verboseEnabled:
+        description: "Enable verbose mode"
+        required: false
+        default: "no"
   release:
     types: [created]
 
