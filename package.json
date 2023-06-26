@@ -1,0 +1,25 @@
+{
+  "name": "@quasar-lib/quasar-app-extension-quasar-datadog-boot",
+  "version": "0.0.1",
+  "description": "Quasar Datadog Boot",
+  "author": "Alex <alex@milyutin.work>",
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quasar-lib/quasar-datadog-boot"
+  },
+  "bugs": "https://github.com/quasar-lib/quasar-datadog-boot/issues",
+  "homepage": "",
+  "engines": {
+    "node": ">= 12.2.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "dependencies": {
+    "@datadog/browser-rum": "^4.43.0"
+  }
+}
