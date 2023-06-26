@@ -18,14 +18,14 @@ import {datadogRum} from '@datadog/browser-rum';
 
 export default boot(({app}) => {
     const config = {
-        applicationId: app.config.DATADOG_APPLICATION_ID,
-        clientToken: app.config.DATADOG_CLIENT_TOKEN,
-        site: app.config.DATADOG_SITE,
-         service: app.config.DATADOG_SERVICE || undefined,
-         env: app.config.DATADOG_ENV || undefined, //'production'
-         version: app.config.DATADOG_VERSION || '1.0.0', //'1.0.0'
-        sessionSampleRate: app.config.DATADOG_SESSION_SAMPLE_RATE || 100,
-        sessionReplaySampleRate: app.config.DATADOG_SESSION_REPLAY_SAMPLE_RATE || undefined, // if not included, the default is 100
+        applicationId: process.env.DATADOG_APPLICATION_ID,
+        clientToken: process.env.DATADOG_CLIENT_TOKEN,
+        site: process.env.DATADOG_SITE,
+        service: process.env.DATADOG_SERVICE || undefined,
+        env: process.env.DATADOG_ENV || undefined, //'production'
+        version: process.env.DATADOG_VERSION || '1.0.0', //'1.0.0'
+        sessionSampleRate: process.env.DATADOG_SESSION_SAMPLE_RATE || 100,
+        sessionReplaySampleRate: process.env.DATADOG_SESSION_REPLAY_SAMPLE_RATE || undefined, // if not included, the default is 100
         trackResources: true,
         trackLongTasks: true,
         trackUserInteractions: true,
