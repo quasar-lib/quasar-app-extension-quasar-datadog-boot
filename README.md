@@ -29,6 +29,10 @@ quasar ext remove quasar-datadog-boot
         DATADOG_SESSION_REPLAY_SAMPLE_RATE: process.env.DATADOG_SESSION_REPLAY_SAMPLE_RATE || undefined, // if not included, the default is 100
       },
 ```
+> Don't forget to import **version** string from `package.json` to use in configuration above:
+```javascript
+const {version} = require('./package.json');
+```
 Only SSR platform case can be considered for direct access to the `process` object.
 
 
