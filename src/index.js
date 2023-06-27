@@ -22,7 +22,7 @@
 
 function extendConf(conf) {
     // register our boot file
-    conf.boot.push('~@quasar-lib/quasar-datadog-boot/src/boot/register.js');
+    conf.boot.push('~@quasar-lib/quasar-app-extension-quasar-datadog-boot/src/boot/register.js');
 }
 
 module.exports = function (api) {
