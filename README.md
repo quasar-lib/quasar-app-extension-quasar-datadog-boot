@@ -1,7 +1,7 @@
 Quasar App Extension quasar-datadog-boot
 ===
 
-Quasar App Extension q-datadog-boot to inject Datadog Browser RUM
+Quasar App Extension quasar-datadog-boot to inject Datadog Browser RUM
 
 # Install
 ```bash
